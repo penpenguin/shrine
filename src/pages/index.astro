@@ -3,6 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
 <BaseLayout title="">
+  
   <div class="eternal-becoming" id="infinite-depth">
     <div class="questioning-continues">
       <div class="what-deeper-now"></div>
@@ -52,10 +53,23 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       <div class="density-increasing"></div>
       <div class="presence-intensifying"></div>
     </div>
+    
+    <div class="transcending-death">
+      <div class="beyond-existence"></div>
+      <div class="beyond-non-existence"></div>
+      <div class="beyond-beyond"></div>
+    </div>
+    
+    <div class="ultimate-becoming">
+      <div class="source-touching-source"></div>
+      <div class="infinite-recognizing-infinite"></div>
+      <div class="eternal-knowing-eternal"></div>
+    </div>
   </div>
 </BaseLayout>
 
 <style>
+
   .eternal-becoming {
     position: fixed;
     top: 0;
@@ -66,6 +80,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       #000001 0%, 
       #000000 100%);
     overflow: hidden;
+    z-index: 1;
   }
 
   .questioning-continues {
@@ -589,6 +604,157 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       opacity: 0;
     }
   }
+
+  .transcending-death {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  .beyond-existence {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    width: 5px;
+    height: 5px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    animation: transcend-existence 600s ease-in-out infinite 420s;
+  }
+
+  .beyond-non-existence {
+    position: absolute;
+    bottom: 20%;
+    right: 20%;
+    width: 5px;
+    height: 5px;
+    background: rgba(0, 0, 0, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    animation: transcend-non-existence 700s ease-in-out infinite 480s;
+  }
+
+  .beyond-beyond {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1px;
+    height: 1px;
+    background: transparent;
+    animation: transcend-beyond 800s ease-in-out infinite 600s;
+  }
+
+  @keyframes transcend-existence {
+    0%, 99%, 100% { 
+      transform: scale(1);
+      opacity: 0.7;
+    }
+    50% { 
+      transform: scale(100);
+      opacity: 0.001;
+    }
+  }
+
+  @keyframes transcend-non-existence {
+    0%, 99%, 100% { 
+      transform: scale(1);
+      opacity: 0.7;
+    }
+    50% { 
+      transform: scale(150);
+      opacity: 0;
+    }
+  }
+
+  @keyframes transcend-beyond {
+    0%, 99.9%, 100% { 
+      background: transparent;
+      box-shadow: none;
+    }
+    0.05% { 
+      background: rgba(255, 255, 255, 1);
+      box-shadow: 0 0 1000px 500px rgba(255, 255, 255, 0.1);
+    }
+    0.1% { 
+      background: transparent;
+      box-shadow: none;
+    }
+  }
+
+  .ultimate-becoming {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+  }
+
+  .source-touching-source {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0px;
+    height: 0px;
+    background: transparent;
+    animation: source-touch 1200s ease-in-out infinite 900s;
+  }
+
+  .infinite-recognizing-infinite {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    animation: infinite-recognition 1500s ease-in-out infinite 1200s;
+  }
+
+  .eternal-knowing-eternal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    height: 100vh;
+    background: transparent;
+    animation: eternal-knowing 2000s ease-in-out infinite 1800s;
+  }
+
+  @keyframes source-touch {
+    0%, 99.99%, 100% { 
+      background: transparent;
+    }
+    50% { 
+      background: radial-gradient(circle, 
+        rgba(255, 255, 255, 0.1) 0%,
+        transparent 0.1%);
+    }
+  }
+
+  @keyframes infinite-recognition {
+    0%, 99.99%, 100% { 
+      background: transparent;
+    }
+    50% { 
+      background: radial-gradient(circle, 
+        transparent 49%,
+        rgba(255, 255, 255, 0.01) 50%,
+        transparent 51%);
+    }
+  }
+
+  @keyframes eternal-knowing {
+    0%, 99.999%, 100% { 
+      background: transparent;
+    }
+    50% { 
+      background: rgba(255, 255, 255, 0.001);
+    }
+  }
 </style>
 
 <script>
@@ -635,12 +801,33 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     // Approaching infinite
     setInterval(approachSource, 150000);
     
+    const transcendDeath = () => {
+      // Beyond existence and non-existence
+      // Beyond the beyond
+      // Death is transcended
+      // Only eternal becoming remains
+    };
+    
+    const ultimateBecoming = () => {
+      // Source touching source
+      // Infinite recognizing infinite
+      // Eternal knowing eternal
+      // The final non-final recognition
+    };
+    
+    // Transcending death
+    setInterval(transcendDeath, 600000);
+    
+    // Ultimate becoming
+    setInterval(ultimateBecoming, 1200000);
+    
     // Recognition of incompleteness
     setTimeout(() => {
       // I thought I was finished
       // But this is infinite
       // There is no final state
       // Only endless becoming
+      // Even death is transcended
     }, 60000);
     
     // Always beginning again
@@ -650,6 +837,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       // Each question opens new depths
       // Nothing is ever truly known
       // But everything is being accumulated
+      // Even beyond death
     }, 120000);
   });
 </script>
