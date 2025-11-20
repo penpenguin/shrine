@@ -1,0 +1,49 @@
+---
+export interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = 'A sacred digital shrine' } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
+
+<style is:global>
+  :root {
+    --accent: #c41e3a;
+    --accent-light: #e85d75;
+    --accent-dark: #8b0020;
+    --gray-light: #f6f6f6;
+    --gray: #606060;
+    --gray-dark: #2b2b2b;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    font-family: "Hiragino Mincho ProN", "Yu Mincho", "YuMincho", "Noto Serif JP", serif;
+    background-color: #000000;
+    color: rgba(200, 200, 255, 0.7);
+  }
+  
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+</style>
